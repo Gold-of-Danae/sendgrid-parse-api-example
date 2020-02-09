@@ -13,8 +13,8 @@ var inbound = {
     var email     = new Email({
       to:       "daniellamlatham@gmail.com",
       from:     "inbound@daniellalatham.com",
-      subject:  "[Incoming Email] From:" + to,
-      html:     JSON.stringify(payload.html)
+      subject:  "[Incoming Email] From:" + to + " Subject: " + payload.subject,
+      html:     payload.html
     });
 
     //email.addFile({
