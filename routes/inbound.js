@@ -14,7 +14,7 @@ var inbound = {
       to:       "daniellamlatham@gmail.com",
       from:     "inbound@daniellalatham.com",
       subject:  "[Incoming Email] From:" + to,
-      text:     JSON.stringify(payload)
+      html:     JSON.stringify(payload.html)
     });
 
     //email.addFile({
